@@ -30,8 +30,8 @@ body{
   color:#FFFFFF;
 }
 
-.hero-text button:hover{
-  background:#ff3f8b;
+.hero-text button{
+  background:#F45FA0;
 }
 }
 /* TOP BAR */
