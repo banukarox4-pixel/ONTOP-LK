@@ -40,7 +40,7 @@ body{
 .search-box{
   display:flex;
   width:40%;
-  background:#FFFFFF;
+  background:#00011A;
   border-radius:50px;
   overflow:hidden;
 }
