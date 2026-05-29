@@ -148,6 +148,7 @@ body{
 .hero-text{
   color:white;
   text-align:right;
+  animation:fadeIn 2s ease;
 }
 
 .hero-text h1{
