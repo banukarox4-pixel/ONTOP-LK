@@ -82,7 +82,7 @@ body{
    SEARCH BOX
 ========================= */
 .search-box{
-  width:40%;
+  width:28%;
 
   display:flex;
 
@@ -99,13 +99,13 @@ body{
   border:none;
   outline:none;
 
-  padding:15px;
+  padding:10px;
 
   background:transparent;
 
   color:white;
 
-  font-size:16px;
+  font-size:14px;
 }
 
 .search-box input::placeholder{
@@ -115,12 +115,12 @@ body{
 .search-box button{
   border:none;
 
-  padding:15px 35px;
+  padding:10px 22px;
 
   background:var(--main-color);
   color:white;
 
-  font-size:16px;
+  font-size:14px;
   font-weight:600;
 
   cursor:pointer;
