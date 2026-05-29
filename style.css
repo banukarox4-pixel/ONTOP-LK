@@ -4,6 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* =========================
+   ROOT COLORS
+========================= */
+:root{
+  --main-color:#4da3ff;
+  --hover-color:#1f7ae0;
+  --dark-bg:#00011A;
+  --nav-bg:#11152f;
+  --white:#ffffff;
+}
+
+/* =========================
    GLOBAL
 ========================= */
 *{
@@ -15,7 +26,7 @@
 }
 
 body{
-  background:linear-gradient(to right,#00011A,#0b1b4d);
+  background:linear-gradient(135deg,#00011A,#0b1b4d);
   overflow-x:hidden;
 }
 
@@ -24,7 +35,7 @@ body{
 ========================= */
 .top-bar{
   width:100%;
-  background:#FFFFFF;
+  background:var(--white);
 
   padding:12px 5%;
 
@@ -43,7 +54,7 @@ body{
    LOGO
 ========================= */
 .logo{
-  font-size:42px;
+  font-size:38px;
   font-weight:700;
   color:#111;
 
@@ -51,18 +62,18 @@ body{
 }
 
 .logo span{
-  color:#ff6ca8;
+  color:var(--main-color);
 }
 
 /* LOGO ANIMATION */
 @keyframes glow{
 
   from{
-    text-shadow:0 0 10px rgba(255,255,255,0.2);
+    text-shadow:0 0 8px rgba(255,255,255,0.15);
   }
 
   to{
-    text-shadow:0 0 20px rgba(255,111,168,0.7);
+    text-shadow:0 0 15px rgba(77,163,255,0.5);
   }
 
 }
@@ -75,7 +86,7 @@ body{
 
   display:flex;
 
-  background:#00011A;
+  background:var(--dark-bg);
 
   border-radius:50px;
 
@@ -106,7 +117,7 @@ body{
 
   padding:15px 35px;
 
-  background:#ff6ca8;
+  background:var(--main-color);
   color:white;
 
   font-size:16px;
@@ -118,7 +129,7 @@ body{
 }
 
 .search-box button:hover{
-  background:#ff3f8b;
+  background:var(--hover-color);
 
   transform:scale(1.05);
 }
@@ -144,7 +155,7 @@ body{
 
   width:100%;
 
-  background:#11152f;
+  background:var(--nav-bg);
 
   backdrop-filter:blur(10px);
 
@@ -160,7 +171,7 @@ body{
 
 /* CATEGORY */
 .categories{
-  background:#ff6ca8;
+  background:var(--main-color);
   color:white;
 
   padding:22px 25px;
@@ -173,7 +184,7 @@ body{
 }
 
 .categories:hover{
-  background:#ff3f8b;
+  background:var(--hover-color);
 }
 
 /* NAV LINKS */
@@ -202,7 +213,7 @@ body{
   width:0%;
   height:2px;
 
-  background:#ff6ca8;
+  background:var(--main-color);
 
   transition:0.4s;
 }
@@ -212,7 +223,7 @@ body{
 }
 
 .navbar a:hover{
-  color:#ff6ca8;
+  color:var(--main-color);
 }
 
 /* =========================
@@ -238,7 +249,7 @@ body{
   background-position:center;
   background-repeat:no-repeat;
 
-  background-color:#00011A;
+  background-color:var(--dark-bg);
 
   animation:zoomBg 8s infinite alternate;
 }
@@ -303,36 +314,42 @@ body{
 
 .hero-text h1{
 
-  font-size:40px;
+  font-size:32px;
 
   margin-bottom:18px;
 
   font-weight:700;
+
+  line-height:1.2;
 }
 
 .hero-text p{
 
-  font-size:20px;
+  font-size:16px;
 
   margin-bottom:18px;
 
   color:#e6e6e6;
+
+  line-height:1.6;
 }
 
 /* BUTTON */
 .hero-text button{
 
-  padding:15px 45px;
+  padding:12px 35px;
 
   border:none;
 
   border-radius:50px;
 
-  background:#ff6ca8;
+  background:var(--main-color);
   color:white;
 
-  font-size:18px;
+  font-size:16px;
   font-weight:600;
+
+  letter-spacing:1px;
 
   cursor:pointer;
 
@@ -344,9 +361,9 @@ body{
 
   transform:scale(1.08);
 
-  background:#ff3f8b;
+  background:var(--hover-color);
 
-  box-shadow:0 10px 30px rgba(255,111,168,0.5);
+  box-shadow:0 10px 30px rgba(77,163,255,0.4);
 }
 
 /* =========================
@@ -431,7 +448,7 @@ body{
 /* PRICE */
 .price{
 
-  color:#ff6ca8;
+  color:var(--main-color);
 
   font-size:24px;
 
@@ -480,15 +497,15 @@ body{
   }
 
   .hero-text h1{
-    font-size:45px;
+    font-size:36px;
   }
 
   .hero-text p{
-    font-size:24px;
+    font-size:18px;
   }
 
   .hero-text button{
-    padding:12px 30px;
+    padding:12px 28px;
   }
 
 }
