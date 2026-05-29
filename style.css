@@ -11,11 +11,28 @@
 }
 
 body{
-    background:#202a44;
-    margin:0;
-    padding:0;
+  background:#D3D3D3;
 }
 
+.navbar{
+  background:#00011A;
+}
+
+.hero{
+  background-color:#00011A;
+}
+
+.logo{
+  color:#CFCFCF;
+}
+
+.logo span{
+  color:#FFFFFF;
+}
+
+.hero-text button{
+  background:#F45FA0;
+}
 /* TOP BAR */
 .top-bar{
   background:#ffffff;
